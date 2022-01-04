@@ -1,0 +1,131 @@
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    font-family: "Ultra", serif;
+    font-weight: 200;
+    color: white;
+    text-shadow: 1px 1px 1px rgb(159, 126, 76);
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    width: 100vw;
+    height: 100vh;
+    /* overflow: hidden; */
+    background-color: black;
+}
+
+.left2 {
+    grid-row: 1/2;
+    width: 100vw;
+    padding: 0;
+}
+
+.stranger {
+    width: 100vw;
+}
+
+.warn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
+    color: rgb(218, 202, 181);
+    text-shadow: 1px 1px 1px rgb(159, 126, 76);
+}
+
+h2 {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+p {
+    letter-spacing: 2pt;
+    font-size: 0.9rem;
+    font-weight: 200;
+    margin: 12px;
+}
+
+.advisory {
+    display: flex;
+    justify-content: center;
+}
+
+.label {
+    margin-top: 15px;
+    grid-row: 4/6;
+    width: 6rem;
+}
+
+button {
+    width: 5rem;
+    height: 3rem;
+    border-radius: 20px;
+}
+
+@media (min-width: 700px) {
+    .container2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        margin: 0;
+    }
+    .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 80%;
+    }
+    .left2 {
+        flex: 1;
+    }
+    .stranger {
+        grid-column: 1/4;
+        grid-row: 1/5;
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    .right2 {
+        flex: 2;
+        font-family: "Roboto Condensed", sans-serif;
+        color: rgb(218, 202, 181);
+        text-shadow: 1px 1px 1px rgb(159, 126, 76);
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    p {
+        margin-top: 2rem;
+        font-size: 1rem;
+    }
+    .advisory {
+        flex-direction: flex-end;
+    }
+    .btn {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+    .button {
+        width: 12rem;
+    }
+    .letsGo {
+        font-family: "Ultra", serif;
+        font-weight: 200;
+        color: white;
+        text-shadow: 1px 1px 1px rgb(159, 126, 76);
+    }
+}

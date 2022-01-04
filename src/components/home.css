@@ -1,0 +1,133 @@
+.capsule {
+    height: 100vh;
+    background-color: rgb(206, 167, 115);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    width: 100vw;
+}
+
+.left {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.title {
+    width: 90%;
+}
+
+.right {
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.card::-webkit-scrollbar {
+    display: none;
+}
+
+.portraitsSm {
+    display: block;
+    width: 100vw;
+}
+
+.portraitsLg {
+    display: none;
+}
+
+.quoteGen {
+    grid-row: 4/6;
+    grid-column: 1/2;
+}
+
+.card {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    overflow-y: scroll;
+    background-image: -webkit-gradient( linear, left top, left bottom, from(rgb(206, 167, 115)), to(rgba(206, 167, 115, 0.455)), color-stoprgb(206, 167, 115));
+}
+
+.text {
+    font-size: 3vh;
+    font-family: "Ultra", serif;
+    font-weight: 300;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+.name {
+    margin-top: 1rem;
+    font-size: 0.75rem;
+    font-family: "Pushster", cursive;
+}
+
+.cta {
+    grid-row: 6/7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ball {
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+}
+
+span {
+    font-family: "Pushster", cursive;
+    color: beige;
+    text-shadow: 1px 1px 1px black;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 815px) {
+    .capsule {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+    }
+    .left {
+        grid-column: 3/8;
+        grid-row: 1/3;
+    }
+    .portraitsSm {
+        display: none;
+        width: 100vw;
+    }
+    .right {
+        grid-column: 1/2;
+    }
+    .portraitsLg {
+        display: block;
+        height: 100vh;
+    }
+    .quoteGen {
+        grid-column: 3/8;
+        grid-row: 3/7;
+    }
+    .card {
+        display: flex;
+        justify-content: center;
+    }
+    .card::-webkit-scrollbar {
+        display: none;
+    }
+    .cta {
+        grid-row: 7/9;
+        grid-column: 4/7;
+    }
+    .ball {
+        width: 5rem;
+        height: 5rem;
+    }
+}
