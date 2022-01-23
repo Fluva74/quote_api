@@ -53,6 +53,7 @@ p {
 }
 
 .advisory {
+    margin-top: -10rem;
     display: flex;
     justify-content: center;
 }
@@ -64,7 +65,7 @@ p {
 }
 
 button {
-    width: 5rem;
+    width: 2rem;
     height: 3rem;
     border-radius: 20px;
 }
