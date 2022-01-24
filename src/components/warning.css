@@ -1,19 +1,22 @@
 .header {
     display: flex;
     justify-content: center;
+    text-align: center;
     background-color: black;
     font-family: "Ultra", serif;
+    font-size: 1.5rem;
     font-weight: 200;
     color: white;
+    padding: 0.58rem;
     text-shadow: 1px 1px 1px rgb(159, 126, 76);
 }
 
 .container2 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     height: 100vh;
+    text-align: center;
     /* overflow: hidden; */
     background-color: black;
 }
@@ -25,7 +28,7 @@
 }
 
 .stranger {
-    width: 100vw;
+    width: 70%;
 }
 
 .warn {
@@ -40,38 +43,59 @@
 }
 
 h2 {
+    color: white;
     margin-top: 10px;
     font-size: 1rem;
     font-weight: 500;
 }
 
 p {
+    color: white;
     letter-spacing: 2pt;
-    font-size: 0.9rem;
-    font-weight: 200;
+    font-size: 0.8rem;
+    font-weight: 400;
     margin: 12px;
 }
 
-.advisory {
-    margin-top: 3rem;
-    display: flex;
-    justify-content: center;
+img.pins {
+    width: 40%;
 }
 
-.label {
-    margin-top: 15px;
-    grid-row: 4/6;
-    width: 6rem;
-}
-
-button {
-    width: 5rem;
-    height: 3rem;
-    border-radius: 20px;
+@media (min-width: 325px) {
+    .advisory {
+        background-color: black;
+        width: 100vw;
+        /* margin-top: 3rem; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .label {
+        margin-top: 15px;
+        width: 6rem;
+        border: 1px solid white;
+    }
+    .bowl {
+        background-color: black;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    a {
+        background-color: black;
+    }
+    img.pins {
+        width: 60%;
+    }
+    .letsGo {
+        position: relative;
+        margin-top: -3rem;
+    }
 }
 
 @media (min-width: 700px) {
     .container2 {
+        margin-top: 2rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -83,6 +107,7 @@ button {
         margin: 0;
     }
     .box {
+        margin-top: 2rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -113,20 +138,36 @@ button {
         font-size: 1rem;
     }
     .advisory {
+        margin-top: 2.37rem;
         flex-direction: flex-end;
     }
-    .btn {
+    a {
+        width: 100%;
         display: flex;
         flex-direction: column;
+        align-items: center;
         cursor: pointer;
+        padding-bottom: 0.1rem;
     }
-    .button {
-        width: 12rem;
+    img.pins {
+        width: 30%;
     }
     .letsGo {
         font-family: "Ultra", serif;
         font-weight: 200;
         color: white;
         text-shadow: 1px 1px 1px rgb(159, 126, 76);
+    }
+}
+
+@media (min-width: 1100px) {
+    .box {
+        margin-top: 0;
+    }
+    .container2 {
+        margin-top: -3.1rem;
+    }
+    .advisory {
+        margin-top: 0;
     }
 }

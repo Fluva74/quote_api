@@ -117,6 +117,7 @@ span {
         grid-row: 3/7;
     }
     .card {
+        scrollbar-width: none;
         display: flex;
         justify-content: center;
     }

@@ -28,12 +28,12 @@ export default function Warning() {
             <div className="advisory">
                 <img  className="label" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Parental_Advisory_label.svg/1200px-Parental_Advisory_label.svg.png" alt="parental advisory label" />
                 </div>
-                <div className="btn">
+                <div className="bowl">
                     <a href="/home">
-                    <img  className="button" src="https://www.pngarts.com/files/3/Bowling-Strike-PNG-Transparent-Image.png" alt="bowling ball and pins" />
+                    <img  className="pins" src="https://www.pngarts.com/files/3/Bowling-Strike-PNG-Transparent-Image.png" alt="bowling ball and pins" />
                 
                     </a>
-                    <caption className="letsGo">Let' Go Bowling!</caption>
+                    <span className="letsGo">Let's Go Bowling!</span>
                 </div>
                
            
