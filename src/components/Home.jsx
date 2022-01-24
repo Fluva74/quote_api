@@ -9,7 +9,7 @@ function Home() {
 const [name, setName] = useState("");
 const getQuote = () => {
   axios
-    .get("http://lebowski.me/api/quotes/random")
+    .get("https://lebowski.me/api/quotes/random")
     .then((res) => {
       setText(res.data.quote.lines[0].text);
       setName(res.data.quote.lines[0].character.name);
