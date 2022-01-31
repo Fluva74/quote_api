@@ -51,7 +51,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 1rem;
+    padding: 3rem 1rem 1rem 1rem;
     overflow-y: scroll;
     background-image: -webkit-gradient( linear, left top, left bottom, from(rgb(206, 167, 115)), to(rgba(206, 167, 115, 0.455)), color-stoprgb(206, 167, 115));
 }
